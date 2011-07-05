@@ -1,3 +1,4 @@
 Manifest-Version: 1.0
 Extension-Name: wiimote
 Class-Manager: WiimoteExtension
+NetLogo-Extension-API-Version: 5.0

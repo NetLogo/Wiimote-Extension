@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="NetLogo-Wiimote-Extension">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bluecove-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WiiRemoteJ.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

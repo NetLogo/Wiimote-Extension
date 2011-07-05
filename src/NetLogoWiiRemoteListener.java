@@ -63,8 +63,8 @@ public class NetLogoWiiRemoteListener extends WiiRemoteAdapter {
 	{
 		if(evt.getIRLights()[0] != null)
 		{
-            pos1x = 1 - (double) (evt.getIRLights()[0].getX());
-            pos1y = 1 - (double) (evt.getIRLights()[0].getY());
+            pos1x = 1 - (evt.getIRLights()[0].getX());
+            pos1y = 1 - (evt.getIRLights()[0].getY());
 			xIR = (80*pos1x) - 40;
 			yIR = (80*pos1y) - 40;
 			previousXIR = xIR;
@@ -72,8 +72,8 @@ public class NetLogoWiiRemoteListener extends WiiRemoteAdapter {
 		}
 		else if (evt.getIRLights()[1] != null)
 		{
-			pos2x = 1 - (double) (evt.getIRLights()[1].getX());
-            pos2y = 1 - (double) (evt.getIRLights()[1].getY());
+			pos2x = 1 - (evt.getIRLights()[1].getX());
+            pos2y = 1 - (evt.getIRLights()[1].getY());
 			xIR = (80*pos2x) - 40;
 			yIR = (80*pos2x) - 40;
 			previousXIR = xIR;
