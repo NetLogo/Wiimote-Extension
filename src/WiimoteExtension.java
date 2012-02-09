@@ -96,7 +96,7 @@ public class WiimoteExtension implements ClassManager {
   public static class connect extends org.nlogo.api.DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_NUMBER;
+      int ret = Syntax.NumberType();
       return Syntax.reporterSyntax(ret);
     }
 
@@ -145,7 +145,7 @@ public class WiimoteExtension implements ClassManager {
 
   public static class numberConnected extends DefaultReporter {
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_NUMBER;
+      int ret = Syntax.NumberType();
       return Syntax.reporterSyntax(ret);
     }
 
@@ -159,7 +159,7 @@ public class WiimoteExtension implements ClassManager {
 
   public static class getIds extends DefaultReporter {
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_LIST;
+      int ret = Syntax.ListType();
       return Syntax.reporterSyntax(ret);
     }
 
@@ -181,7 +181,7 @@ public class WiimoteExtension implements ClassManager {
 
   public static class disconnect extends DefaultCommand {
     public Syntax getSyntax() {
-      int[] wiimoteNumber = {Syntax.TYPE_NUMBER};
+      int[] wiimoteNumber = {Syntax.NumberType()};
       return Syntax.commandSyntax(wiimoteNumber);
     }
 
@@ -212,10 +212,10 @@ public class WiimoteExtension implements ClassManager {
 
   public static class connected extends DefaultReporter {
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_BOOLEAN;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.BooleanType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(
-          new int[]{Syntax.TYPE_NUMBER}, Syntax.TYPE_BOOLEAN
+          new int[]{Syntax.NumberType()}, Syntax.BooleanType()
       );
     }
 
@@ -230,8 +230,8 @@ public class WiimoteExtension implements ClassManager {
 
   public static class xAccel extends DefaultReporter {
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_NUMBER;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.NumberType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -255,9 +255,9 @@ public class WiimoteExtension implements ClassManager {
   public static class pulse extends DefaultCommand {
 
     public Syntax getSyntax() {
-      int[] input = {Syntax.TYPE_NUMBER,
-          Syntax.TYPE_NUMBER,
-          Syntax.TYPE_NUMBER};
+      int[] input = {Syntax.NumberType(),
+          Syntax.NumberType(),
+          Syntax.NumberType()};
       return Syntax.commandSyntax(input);
     }
 
@@ -282,7 +282,7 @@ public class WiimoteExtension implements ClassManager {
   public static class vibrate extends DefaultCommand {
 
     public Syntax getSyntax() {
-      int[] input = {Syntax.TYPE_NUMBER, Syntax.TYPE_NUMBER};
+      int[] input = {Syntax.NumberType(), Syntax.NumberType()};
       return Syntax.commandSyntax(input);
     }
 
@@ -303,7 +303,7 @@ public class WiimoteExtension implements ClassManager {
 
   public static class sound extends DefaultCommand {
     public Syntax getSyntax() {
-      int[] input = {Syntax.TYPE_NUMBER, Syntax.TYPE_STRING};
+      int[] input = {Syntax.NumberType(), Syntax.StringType()};
       return Syntax.commandSyntax(input);
     }
 
@@ -336,7 +336,7 @@ public class WiimoteExtension implements ClassManager {
 
   public static class led extends DefaultCommand {
     public Syntax getSyntax() {
-      int[] input = {Syntax.TYPE_NUMBER, Syntax.TYPE_NUMBER};
+      int[] input = {Syntax.NumberType(), Syntax.NumberType()};
       return Syntax.commandSyntax(input);
     }
 
@@ -362,8 +362,8 @@ public class WiimoteExtension implements ClassManager {
   public static class pitch extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_NUMBER;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.NumberType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -391,8 +391,8 @@ public class WiimoteExtension implements ClassManager {
   public static class roll extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_NUMBER;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.NumberType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -417,8 +417,8 @@ public class WiimoteExtension implements ClassManager {
   public static class yAccel extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_NUMBER;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.NumberType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -443,8 +443,8 @@ public class WiimoteExtension implements ClassManager {
   public static class zAccel extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_NUMBER;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.NumberType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -469,8 +469,8 @@ public class WiimoteExtension implements ClassManager {
   public static class xIR extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_NUMBER;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.NumberType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -495,8 +495,8 @@ public class WiimoteExtension implements ClassManager {
   public static class yIR extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_NUMBER;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.NumberType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -522,8 +522,8 @@ public class WiimoteExtension implements ClassManager {
   public static class bPushed extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_BOOLEAN;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.BooleanType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -547,8 +547,8 @@ public class WiimoteExtension implements ClassManager {
   public static class aPushed extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_BOOLEAN;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.BooleanType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -572,8 +572,8 @@ public class WiimoteExtension implements ClassManager {
   public static class plusPushed extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_BOOLEAN;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.BooleanType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -597,8 +597,8 @@ public class WiimoteExtension implements ClassManager {
   public static class minusPushed extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_BOOLEAN;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.BooleanType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -622,8 +622,8 @@ public class WiimoteExtension implements ClassManager {
   public static class homePushed extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_BOOLEAN;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.BooleanType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -647,8 +647,8 @@ public class WiimoteExtension implements ClassManager {
   public static class upPushed extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_BOOLEAN;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.BooleanType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -672,8 +672,8 @@ public class WiimoteExtension implements ClassManager {
   public static class downPushed extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_BOOLEAN;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.BooleanType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -697,8 +697,8 @@ public class WiimoteExtension implements ClassManager {
   public static class leftPushed extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_BOOLEAN;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.BooleanType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -722,8 +722,8 @@ public class WiimoteExtension implements ClassManager {
   public static class rightPushed extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_BOOLEAN;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.BooleanType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -748,8 +748,8 @@ public class WiimoteExtension implements ClassManager {
   public static class onePushed extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_BOOLEAN;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.BooleanType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
@@ -773,8 +773,8 @@ public class WiimoteExtension implements ClassManager {
   public static class twoPushed extends DefaultReporter {
 
     public Syntax getSyntax() {
-      int ret = Syntax.TYPE_BOOLEAN;
-      int[] input = {Syntax.TYPE_NUMBER};
+      int ret = Syntax.BooleanType();
+      int[] input = {Syntax.NumberType()};
       return Syntax.reporterSyntax(input, ret);
     }
 
