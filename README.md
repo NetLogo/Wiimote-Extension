@@ -1,5 +1,4 @@
-CONTENTS
-========
+# CONTENTS
 
 This package contains the NetLogo Wiimote extension.
 It uses Bluecove 2.1.0 to enable your computer to 
@@ -13,8 +12,7 @@ WiiRemoteJ: http://www.world-of-cha0s.hostrocket.com/WiiRemoteJ/
 The NetLogo Wiimote Extension is written and maintained
 by Michelle Wilkerson-Jerde, Gregory Dam, and Nathan Holbert.
 
-INSTRUCTIONS
-============
+# INSTRUCTIONS
 
 This extension is intended for use with NetLogo. To 
 use it, move NetLogo-Wiimote-Extension to the "extensions"
@@ -25,8 +23,7 @@ it is currently set for, recompile from within the directory:
 
 jar cvfm wii.jar manifest.txt -C classes .
 
-REQUIREMENTS
-============
+# REQUIREMENTS
 
 This extension has been tested on Mac OSX.
 
